@@ -1,0 +1,27 @@
+<h3>Add To List</h3>
+
+<form [formGroup]="form" (ngSubmit)="addNewCity()">
+
+  <table>
+    <tr>
+        <td>Country:</td>
+        <td>
+          <input type="text" size="30" formControlName="country">
+        </td>
+      </tr>
+    <tr>
+      <td>City:</td>
+      <td>
+        <input type="text" size="30" formControlName="city">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="submit" [disabled]="form.invalid">
+          Add City</button>
+      </td>
+    </tr>
+  </table>
+
+</form>
+

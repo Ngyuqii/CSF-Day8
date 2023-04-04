@@ -1,0 +1,19 @@
+<h3>I wonder what is the weather today.</h3>
+
+<table>
+    <th>COUNTRY - City</th>
+    <th>DEL</th>
+    <tr *ngFor="let c of finalCities; let idx =index" [routerLink]="['weather', c.city]">
+        <td>{{c.country | uppercase}} - {{c.city | titlecase}}</td>
+        <td>
+            <button (click)="deleteItem(idx)">X</button>
+        </td>
+    </tr>
+</table>
+
+<br><br>
+<div>"A lot of people like snow. I find it to be an unnecessary freezing of water."
+    <br>&nbsp;
+    - Carl Reiner
+</div>
+    

@@ -1,0 +1,12 @@
+<h2>Weather - {{weather.cityName}}</h2>
+<p style="font-weight: bold;">{{weather.description | titlecase}}</p>
+<img src="https://openweathermap.org/img/wn/{{ weather.icon }}@2x.png" alt="Weather Image" width="150px">
+<p>Temperature: {{weather.temp}}</p>
+<p>Pressure: {{weather.pressure}}</p>
+<p>Humidity: {{weather.humidity}}</p>
+<p>Wind Speed: {{weather.windSpeed}}</p>
+
+<br>
+<p style="color: purple; font-weight: bold;">
+    "Wherever you go, no matter what the weather, always bring your own sunshine."
+</p>
