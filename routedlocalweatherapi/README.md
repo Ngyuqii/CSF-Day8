@@ -1,6 +1,6 @@
-### Routed Weather API + Browser Storage IndexedDB with Dixie
+### Routed Weather API + Local Storage on Browser
 - Home page display a list of predetermined countires and cities.
-- A button brings user to a page to add their preferred country, city and optional image URL. Submitting the form adds city to the list on the home page. The values are saved in browser IndexedDB citiesdb city.
+- A button brings user to a page to add their preferred country, city and optional image URL. Submitting the form adds city to the list on the home page. The country and city input is saved in browser local storage.
 - Clicking on any city in the list directs the user to /weather/city and shows specified weather information for the city. Display:
 1. City
 2. Weather description >>>> "weather": [{"description": "broken clouds"}]
@@ -10,7 +10,7 @@
 6. Humidity >>>> "main": {"humidity": 83}
 7. Wind Speed >>>> "wind": {"speed": 2.06} 
 - A button brings user back to home page.
-- A button clears the city table data in browser.
+- A button clears the local storage.
 
 ### Required data
 ```
